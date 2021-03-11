@@ -11,9 +11,9 @@
 
 	session_start();
 
-	$_SESSION['login'] = array('admin' => 'admin', 'user' => 'user');
 
 	if(isset($_POST["submit"])){
+
 
 		$_SESSION['Username'] = isset($_POST['Username']) ? $_POST["Username"] : '';
 		$_SESSION['Password'] = isset($_POST['Password']) ? $_POST['Password'] : '';
