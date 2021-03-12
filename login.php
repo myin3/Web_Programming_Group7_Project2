@@ -8,45 +8,47 @@
 <body>
 
 <?php
-
+	
 	session_start();
-
-
-	if(isset($_POST["submit"])){
-
-
-		$_SESSION['Username'] = isset($_POST['Username']) ? $_POST["Username"] : '';
-		$_SESSION['Password'] = isset($_POST['Password']) ? $_POST['Password'] : '';
-
-		if (isset($_SESSION['Username']) && isset($_SESSION['Password'])){
-			$_SESSION['Points'] = 0;
-			header("location: jeopardyMain.php");
-			exit;
-		} else {
-			$msg="<span style='color:red'>Invalid Login Details</span>";
+	$Username= $_SESSION['Username'];
+	$Password= $_SESSION['Password'];
+	$usernameErr = $passwordErr = "";
+	$loginUser = $loginPass = "";
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		
+		if($_POST['loginUser'] != $Username) {
+			$usernameErr = "Username is incorrect";
 		}
-
-	}
-
+		if($_POST['loginPass'] != $Password) {
+			$passwordErr = "Password is incorrect";
+			}
+	}		
 ?>
 
 <form method="post" name="Login">
-    <?php 
-	    if(isset($msg)){
-			echo $msg;
-		} 
-	?>
     <h1>Login</h1>
     <label class="left" for="Username">Username</label>
-    <input name="Username" type="text"/>
+    <input name="loginUser" type="text"/>
+	<span class="error"><?php echo $usernameErr;?></span>
     <br/>
     <label class="left" for="Password">Password</label>
-    <input name="Password" type="password"/>
+    <input name="loginPass" type="password"/>
+	<span class="error"><?php echo $passwordErr;?></span>
     <br/>
     <br/>
     <input name="submit" type="submit" value="Login"/>
     <br/><br/>
     <a href="signup.php" class="signup">Sign Up Here!</a>
+	
+	<?php 
+			
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				if($_POST['loginUser']==$Username && $_POST['loginPass']==$Password ) {
+					header('Location: jeopardyMain.php');
+					exit();
+				}
+			}			
+		?>
 </form>
 </body>
 </html>

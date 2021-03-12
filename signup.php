@@ -8,23 +8,50 @@
 </head>
 <body>
 
-	<?php 
-		session_start()
-	?>
 
 
 	<main>
 		<h1>Sign up for free!</h1>
+			<?php 
+				session_start();
+				$usernameErr = $passwordErr = "";
+				$Username = $Password = "";
+				if ($_SERVER["REQUEST_METHOD"] == "POST") {
+					if($_POST['Username'] == "") {
+						$usernameErr = "Username is required";
+					}
+					if($_POST['Password'] == "") {
+						$passwordErr = "Password is required";
+					}
+				}	
+				
+			?>
 
-		<form action="login.php" method="post">
+		<form method="post" name="Signup">
 			<strong><label class="left" for="Username">Username:</label></strong>
 			<input type="text" name="Username" size="16" placeholder="Username">
+			<span class="error"><?php echo $usernameErr;?></span>
 			<br/>
 			<strong><label class="left" for="Password">Password:</label></strong>
 			<input type="password" name="Password" size="16" placeholder="Password">
+			<span class="error"><?php echo $passwordErr;?></span>
 			<br/><br/>
 			<input type="submit" name="signup" value="Sign Up">
 		</form>
+		<?php 
+		
+				if ($_SERVER["REQUEST_METHOD"] == "POST") {
+					$_SESSION['Username'] = $_POST['Username'];
+					$_SESSION['Password'] = $_POST['Password'];
+					if(!$_POST['Username'] == "" && !$_POST['Password'] == "") {
+						header('Location: login.php');
+						exit();
+					}
+				}			
+		?>
+	
+		
 	</main>
+	
 </body>
 </html>

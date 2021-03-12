@@ -88,3 +88,9 @@ label.left {
 a.signup:visited {
 	color: white;
 }
+
+.error {
+ 	color: red;
+	font-weight: bold;	
+
+}
