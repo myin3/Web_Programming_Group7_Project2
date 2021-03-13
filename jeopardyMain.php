@@ -32,7 +32,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer1"]) == "Yes") or (trim($_POST["answer1"]) == "yes")) {
+									if ((trim($_POST["answer1"]) == "HEADER") or (trim($_POST["answer1"]) == "header")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 100);
 									}
 									else{
@@ -54,7 +54,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer2"]) == "Yes") or (trim($_POST["answer2"]) == "yes")) {
+									if ((trim($_POST["answer2"]) == "PADDING") or (trim($_POST["answer2"]) == "padding")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 100);
 									}
 									else{
@@ -144,7 +144,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer6"]) == "Yes") or (trim($_POST["answer6"]) == "yes")) {
+									if ((trim($_POST["answer6"]) == "TH") or (trim($_POST["answer6"]) == "th")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 200);
 									}
 									else{
@@ -166,7 +166,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer7"]) == "Yes") or (trim($_POST["answer7"]) == "yes")) {
+									if ((trim($_POST["answer7"]) == ".TEST") or (trim($_POST["answer7"]) == ".test")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 200);
 									}
 									else{
@@ -252,11 +252,11 @@
 							300
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
-								if ($_POST["answer12"] != "") {
+								if ($_POST["answer11"] != "") {
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer11"]) == "Yes") or (trim($_POST["answer11"]) == "yes")) {
+									if ((trim($_POST["answer11"]) == "FORM CONTROLS") or (trim($_POST["answer11"]) == "form controls")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 300);
 									}
 									else{
@@ -278,7 +278,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer12"]) == "Yes") or (trim($_POST["answer12"]) == "yes")) {
+									if ((trim($_POST["answer12"]) == "THREE") or (trim($_POST["answer12"]) == "three")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 300);
 									}
 									else{
@@ -368,7 +368,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer16"]) == "Yes") or (trim($_POST["answer16"]) == "yes")) {
+									if ((trim($_POST["answer16"]) == "CHECK BOX") or (trim($_POST["answer16"]) == "check box")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 400);
 									}
 									else{
@@ -390,7 +390,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer17"]) == "Yes") or (trim($_POST["answer17"]) == "yes")) {
+									if ((trim($_POST["answer17"]) == "SEMICOLON") or (trim($_POST["answer17"]) == "semicolon")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 400);
 									}
 									else{
@@ -480,7 +480,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer21"]) == "Yes") or (trim($_POST["answer21"]) == "yes")) {
+									if ((trim($_POST["answer21"]) == "HYPER TEXT MARKUP LANGUAGE") or (trim($_POST["answer21"]) == "hyper text markup language")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 500);
 									}
 									else{
@@ -502,7 +502,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer22"]) == "Yes") or (trim($_POST["answer22"]) == "yes")) {
+									if ((trim($_POST["answer22"]) == "TRANSITION") or (trim($_POST["answer22"]) == "transition")) {
 									$_SESSION["Points"] = ($_SESSION["Points"] + 500);
 									}
 									else{
