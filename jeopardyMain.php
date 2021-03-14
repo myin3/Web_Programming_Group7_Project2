@@ -120,7 +120,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer5"]) == "Yes") or (trim($_POST["answer5"]) == "yes")) {
+									if ((trim($_POST["answer5"]) == "B") or (trim($_POST["answer5"]) == "b")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 100);
 									}
 									else{
@@ -232,7 +232,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer10"]) == "Yes") or (trim($_POST["answer10"]) == "yes")) {
+									if ((trim($_POST["answer10"]) == "Cascading Style Sheets") or (trim($_POST["answer10"]) == "cascading style sheets")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 200);
 									}
 									else{
@@ -344,7 +344,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer15"]) == "Yes") or (trim($_POST["answer15"]) == "yes")) {
+									if ((trim($_POST["answer15"]) == "True") or (trim($_POST["answer15"]) == "true")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 300);
 									}
 									else{
@@ -456,7 +456,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer20"]) == "Yes") or (trim($_POST["answer20"]) == "yes")) {
+									if ((trim($_POST["answer20"]) == "Dynamically") or (trim($_POST["answer20"]) == "dynamically")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 400);
 									}
 									else{
@@ -568,7 +568,7 @@
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
-									if ((trim($_POST["answer25"]) == "Yes") or (trim($_POST["answer25"]) == "yes")) {
+									if ((trim($_POST["answer25"]) == "False") or (trim($_POST["answer25"]) == "false")) {
 										$_SESSION["Points"] = ($_SESSION["Points"] + 500);
 									}
 									else{
