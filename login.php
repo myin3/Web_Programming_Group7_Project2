@@ -10,6 +10,7 @@
 <?php
 	
 	session_start();
+	echo("Account created successfully");
 	$Username= $_SESSION['Username'];
 	$Password= $_SESSION['Password'];
 	$usernameErr = $passwordErr = "";

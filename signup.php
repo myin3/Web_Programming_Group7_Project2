@@ -37,7 +37,6 @@
 			<span class="error"><?php echo $passwordErr;?></span>
 			<br/><br/>
 			<input type="submit" name="signup" value="Sign Up">
-			<input type="submit" name="login" value="Log In">
 		</form>
 		<?php 
 		
@@ -45,11 +44,11 @@
 					$_SESSION['Username'] = $_POST['Username'];
 					$_SESSION['Password'] = $_POST['Password'];
 					if(!$_POST['Username'] == "" && !$_POST['Password'] == "") {
-						echo("Account created successfully");
-						if (isset($_POST['login'])) { 
+						// echo("Account created successfully");
+						// if (isset($_POST['login'])) { 
 							header('Location: login.php');
 							exit();
-						}			
+						// }			
 						
 					}
 				}			
