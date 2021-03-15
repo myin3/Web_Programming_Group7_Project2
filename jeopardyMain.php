@@ -10,6 +10,21 @@
 	<title>Jeopardy Main Page</title>
 	<link rel="stylesheet" type="text/css" href="jeopardystyle.css">
 </head>
+<!-- Logout Button -->
+		<div class="logout">
+			<form method="post" name="Logout">
+				<input type="submit" name="logout" value="Logout">
+			</form>
+			<?php 
+				if (isset($_POST['logout'])) { 
+					setcookie(session_name(), '', 100);
+					session_unset();
+					session_destroy();
+					$_SESSION = array();
+					header('Location: signup.php');
+				}			
+		?>
+		</div>
 <body>
 	<main>
 		<table>

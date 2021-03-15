@@ -73,6 +73,17 @@ div.scoreboard {
 	color: white;
 }
 
+
+div.logout {
+	position: fixed;
+	bottom: 10px;
+	border: 2px solid;
+	border-color: yellow;
+	padding: 2%;
+	color: white;
+}
+
+
 span.score {
 	color: white;
 	font-weight: bold;
