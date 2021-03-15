@@ -1,3 +1,8 @@
+<?php
+	session_save_path("./");
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +13,6 @@
 <body>
 
 <?php
-	
-	session_start();
 	echo("Account created successfully");
 	$Username= $_SESSION['Username'];
 	$Password= $_SESSION['Password'];
@@ -18,6 +21,8 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		if($_POST['loginUser'] != $Username) {
+			// echo $_POST['loginUser'];
+			// echo '|'.$Username;
 			$usernameErr = "Username is incorrect";
 		}
 		if($_POST['loginPass'] != $Password) {
@@ -28,11 +33,11 @@
 
 <form method="post" name="Login">
     <h1>Login</h1>
-    <label class="left" for="Username">Username</label>
+    <label class="left" for="loginUser">Username</label>
     <input name="loginUser" type="text"/>
 	<span class="error"><?php echo $usernameErr;?></span>
     <br/>
-    <label class="left" for="Password">Password</label>
+    <label class="left" for="loginPass">Password</label>
     <input name="loginPass" type="password"/>
 	<span class="error"><?php echo $passwordErr;?></span>
     <br/>
@@ -45,6 +50,7 @@
 			
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				if($_POST['loginUser']==$Username && $_POST['loginPass']==$Password ) {
+					$_SESSION['Points'] = 0;
 					header('Location: jeopardyMain.php');
 					exit();
 				}

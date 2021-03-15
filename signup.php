@@ -1,3 +1,8 @@
+<?php
+	session_save_path("./");
+	session_start();
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +18,7 @@
 	<main>
 		<h1>Sign up for free!</h1>
 			<?php 		
-				session_start();
+
 				$usernameErr = $passwordErr = "";
 			    $Username = $Password = "";
 				if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
@@ -23,7 +28,7 @@
 					if($_POST['Password'] == "") {
 						$passwordErr = "Password is required";
 					}
-				}	
+				}
 				
 			?>
 
@@ -51,7 +56,7 @@
 						// }			
 						
 					}
-				}			
+				}
 		?>
 	
 		

@@ -1,4 +1,5 @@
 <?php
+	session_save_path("./");
 	session_start();
 	error_reporting(E_ALL ^ E_WARNING);
 ?>
@@ -56,7 +57,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 									}
 								}
-								$_POST["answer1"] = "";
+								else if (isset($_POST['answer1'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -78,7 +81,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 									}
 								}
-								$_POST["answer2"] = "";
+								else if (isset($_POST['answer2'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -100,7 +105,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 									}
 								}
-								$_POST["answer3"] = "";
+								else if (isset($_POST['answer3'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -122,7 +129,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 									}
 								}
-								$_POST["answer4"] = "";
+								else if (isset($_POST['answer4'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -144,7 +153,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 									}
 								}
-								$_POST["answer5"] = "";
+								else if (isset($_POST['answer5'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -168,7 +179,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 									}
 								}
-								$_POST["answer6"] = "";
+								else if (isset($_POST['answer6'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -190,7 +203,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 									}
 								}
-								$_POST["answer7"] = "";
+								else if (isset($_POST['answer7'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -212,7 +227,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 									}
 								}
-								$_POST["answer8"] = "";
+								else if (isset($_POST['answer8'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -234,7 +251,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 									}
 								}
-								$_POST["answer9"] = "";
+								else if (isset($_POST['answer9'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -256,7 +275,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 									}
 								}
-								$_POST["answer10"] = "";
+								else if (isset($_POST['answer10'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -280,7 +301,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 									}
 								}
-								$_POST["answer11"] = "";
+								else if (isset($_POST['answer11'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -302,7 +325,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 									}
 								}
-								$_POST["answer12"] = "";
+								else if (isset($_POST['answer12'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -324,7 +349,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 									}
 								}
-								$_POST["answer13"] = "";
+								else if (isset($_POST['answer13'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -346,7 +373,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 									}
 								}
-								$_POST["answer14"] = "";
+								else if (isset($_POST['answer14'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -368,7 +397,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 									}
 								}
-								$_POST["answer15"] = "";
+								else if (isset($_POST['answer15'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -392,7 +423,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 									}
 								}
-								$_POST["answer16"] = "";
+								else if (isset($_POST['answer16'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -414,7 +447,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 									}
 								}
-								$_POST["answer17"] = "";
+								else if (isset($_POST['answer17'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a
@@ -436,7 +471,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 									}
 								}
-								$_POST["answer18"] = "";
+								else if (isset($_POST['answer18'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -458,7 +495,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 									}
 								}
-								$_POST["answer18"] = "";
+								else if (isset($_POST['answer19'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -480,7 +519,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 									}
 								}
-								$_POST["answer20"] = "";
+								else if (isset($_POST['answer20'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -504,7 +545,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 									}
 								}
-								$_POST["answer21"] = "";
+								else if (isset($_POST['answer21'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -526,7 +569,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 									}
 								}
-								$_POST["answer22"] = "";
+								else if (isset($_POST['answer22'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -548,7 +593,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 									}
 								}
-								$_POST["answer23"] = "";
+								else if (isset($_POST['answer23'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -570,7 +617,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 									}
 								}
-								$_POST["answer24"] = "";
+								else if (isset($_POST['answer24'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -592,7 +641,9 @@
 										$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 									}
 								}
-								$_POST["answer25"] = "";
+								else if (isset($_POST['answer25'])){
+									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+								}
 							?>
 						</div>
 					</a>
@@ -606,6 +657,13 @@
 				<li><?php print($_SESSION['Username'].': '.$_SESSION['Points']); ?></li>
 			</ul>
 		</div>
+
+		<?php
+			if ($_SESSION['Points'] == 6700) {
+				header('Location: endscreen.php');
+				exit();
+			}
+		?>
 	</main>
 </body>
 </html>
