@@ -12,11 +12,11 @@
 
 	<main>
 		<h1>Sign up for free!</h1>
-			<?php 
+			<?php 		
 				session_start();
 				$usernameErr = $passwordErr = "";
-				$Username = $Password = "";
-				if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			    $Username = $Password = "";
+				if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
 					if($_POST['Username'] == "") {
 						$usernameErr = "Username is required";
 					}
@@ -37,6 +37,7 @@
 			<span class="error"><?php echo $passwordErr;?></span>
 			<br/><br/>
 			<input type="submit" name="signup" value="Sign Up">
+			<input type="submit" name="login" value="Log In">
 		</form>
 		<?php 
 		
@@ -44,8 +45,12 @@
 					$_SESSION['Username'] = $_POST['Username'];
 					$_SESSION['Password'] = $_POST['Password'];
 					if(!$_POST['Username'] == "" && !$_POST['Password'] == "") {
-						header('Location: login.php');
-						exit();
+						echo("Account created successfully");
+						if (isset($_POST['login'])) { 
+							header('Location: login.php');
+							exit();
+						}			
+						
 					}
 				}			
 		?>

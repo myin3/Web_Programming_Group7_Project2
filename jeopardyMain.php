@@ -10,7 +10,11 @@
 	<title>Jeopardy Main Page</title>
 	<link rel="stylesheet" type="text/css" href="jeopardystyle.css">
 </head>
-<!-- Logout Button -->
+
+<body>
+			
+	<main>
+		<!-- Logout Button -->
 		<div class="logout">
 			<form method="post" name="Logout">
 				<input type="submit" name="logout" value="Logout">
@@ -23,10 +27,8 @@
 					$_SESSION = array();
 					header('Location: signup.php');
 				}			
-		?>
+			?>
 		</div>
-<body>
-	<main>
 		<table>
 			<tr>
 				<th>HTML</th>
