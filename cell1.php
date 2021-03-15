@@ -11,7 +11,7 @@
 
 
 	<form action="jeopardyMain.php" method="post">
-		<input class="center-block" type="text" name="answer11">
+		<input class="center-block" type="text" name="answer1">
 		<input class="center-block" type="submit" name="submit">
 	</form>
 
