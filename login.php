@@ -1,6 +1,7 @@
 <?php
 	session_save_path("./");
 	session_start();
+	error_reporting(E_ALL ^ E_WARNING);
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +14,13 @@
 <body>
 
 <?php
-	echo("Account created successfully");
 	$Username= $_SESSION['Username'];
 	$Password= $_SESSION['Password'];
+
+	if (!empty($Username) && !empty($Password)) {
+		echo "Account Created Successfully.";
+	}
+
 	$usernameErr = $passwordErr = "";
 	$loginUser = $loginPass = "";
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
