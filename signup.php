@@ -43,6 +43,9 @@
 			<br/><br/>
 			<input type="submit" name="signup" value="Sign Up">
 		</form>
+
+		<br>
+		<a href="leader.php">Check out the High Scores here!</a>
 		<?php 
 		
 				if ($_SERVER["REQUEST_METHOD"] == "POST") {

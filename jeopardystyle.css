@@ -47,6 +47,7 @@ div.question {
 	font-size: 30px;
 }
 
+
 input.center-block {
 	margin: 20% auto;
 	display: block;
@@ -96,6 +97,7 @@ label.left {
 
 a.signup:visited {
 	color: white;
+	font-weight: bold;
 }
 
 .error {

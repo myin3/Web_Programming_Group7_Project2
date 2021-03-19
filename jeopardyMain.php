@@ -47,6 +47,7 @@
 							<?php
 								//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer1"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -58,6 +59,7 @@
 									}
 								}
 								else if (isset($_POST['answer1'])){
+									$_SESSION['questions'] += 1;
 									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 								}
 							?>
@@ -71,6 +73,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer2"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -82,6 +85,7 @@
 									}
 								}
 								else if (isset($_POST['answer2'])){
+									$_SESSION['questions'] += 1;
 									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 								}
 							?>
@@ -95,6 +99,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer3"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -106,6 +111,7 @@
 									}
 								}
 								else if (isset($_POST['answer3'])){
+									$_SESSION['questions'] += 1;
 									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 								}
 							?>
@@ -119,6 +125,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer4"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -130,6 +137,7 @@
 									}
 								}
 								else if (isset($_POST['answer4'])){
+									$_SESSION['questions'] += 1;
 									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 								}
 							?>
@@ -143,6 +151,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer5"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -154,6 +163,7 @@
 									}
 								}
 								else if (isset($_POST['answer5'])){
+									$_SESSION['questions'] += 1;
 									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
 								}
 							?>
@@ -169,6 +179,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer6"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -180,7 +191,8 @@
 									}
 								}
 								else if (isset($_POST['answer6'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 								}
 							?>
 						</div>
@@ -193,6 +205,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer7"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -204,7 +217,8 @@
 									}
 								}
 								else if (isset($_POST['answer7'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 								}
 							?>
 						</div>
@@ -217,6 +231,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer8"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -228,7 +243,8 @@
 									}
 								}
 								else if (isset($_POST['answer8'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 								}
 							?>
 						</div>
@@ -241,6 +257,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer9"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -252,7 +269,8 @@
 									}
 								}
 								else if (isset($_POST['answer9'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 								}
 							?>
 						</div>
@@ -265,6 +283,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer10"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -276,7 +295,8 @@
 									}
 								}
 								else if (isset($_POST['answer10'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 200);
 								}
 							?>
 						</div>
@@ -291,6 +311,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer11"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -302,7 +323,8 @@
 									}
 								}
 								else if (isset($_POST['answer11'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 								}
 							?>
 						</div>
@@ -315,6 +337,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer12"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -326,7 +349,8 @@
 									}
 								}
 								else if (isset($_POST['answer12'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 								}
 							?>
 						</div>
@@ -339,6 +363,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer13"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -350,7 +375,8 @@
 									}
 								}
 								else if (isset($_POST['answer13'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 								}
 							?>
 						</div>
@@ -363,6 +389,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer14"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -374,7 +401,8 @@
 									}
 								}
 								else if (isset($_POST['answer14'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 								}
 							?>
 						</div>
@@ -387,6 +415,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer15"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -398,7 +427,8 @@
 									}
 								}
 								else if (isset($_POST['answer15'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 300);
 								}
 							?>
 						</div>
@@ -413,6 +443,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer16"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -424,7 +455,8 @@
 									}
 								}
 								else if (isset($_POST['answer16'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 								}
 							?>
 						</div>
@@ -437,6 +469,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer17"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -448,7 +481,8 @@
 									}
 								}
 								else if (isset($_POST['answer17'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 								}
 							?>
 						</div>
@@ -461,6 +495,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer18"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -472,7 +507,8 @@
 									}
 								}
 								else if (isset($_POST['answer18'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 								}
 							?>
 						</div>
@@ -485,6 +521,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer19"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -496,7 +533,8 @@
 									}
 								}
 								else if (isset($_POST['answer19'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 								}
 							?>
 						</div>
@@ -509,6 +547,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer20"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -520,7 +559,8 @@
 									}
 								}
 								else if (isset($_POST['answer20'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 400);
 								}
 							?>
 						</div>
@@ -535,6 +575,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer21"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -546,7 +587,8 @@
 									}
 								}
 								else if (isset($_POST['answer21'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 								}
 							?>
 						</div>
@@ -559,6 +601,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer22"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -570,7 +613,8 @@
 									}
 								}
 								else if (isset($_POST['answer22'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 								}
 							?>
 						</div>
@@ -583,6 +627,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer23"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -594,7 +639,8 @@
 									}
 								}
 								else if (isset($_POST['answer23'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 								}
 							?>
 						</div>
@@ -607,6 +653,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer24"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -618,7 +665,8 @@
 									}
 								}
 								else if (isset($_POST['answer24'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 								}
 							?>
 						</div>
@@ -631,6 +679,7 @@
 							<?php
 							//Conditional to make sure that only the question just answered is accounted for.
 								if ($_POST["answer25"] != "") {
+									$_SESSION['questions'] += 1;
 									/*
 										CHANGE THE SECOND PART OF THE CONDITIONALS "YES" and "yes" to the correct answer so that it's case insensitive.
 									*/
@@ -642,7 +691,8 @@
 									}
 								}
 								else if (isset($_POST['answer25'])){
-									$_SESSION["Points"] = ($_SESSION["Points"] - 100);
+									$_SESSION['questions'] += 1;
+									$_SESSION["Points"] = ($_SESSION["Points"] - 500);
 								}
 							?>
 						</div>
@@ -659,10 +709,12 @@
 		</div>
 
 		<?php
-			if ($_SESSION['Points'] == 6700) {
+			if ($_SESSION['questions'] == 25) {
+				file_put_contents("leader.txt", "\n".$_SESSION['Points']." ".$_SESSION['Username'], FILE_APPEND);
 				header('Location: endscreen.php');
 				exit();
 			}
+
 		?>
 	</main>
 </body>

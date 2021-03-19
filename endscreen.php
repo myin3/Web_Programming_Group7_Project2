@@ -11,10 +11,11 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<h1>YOU WIN!</h1>
+	<h1>Game Over!</h1>
 
-	<h2>Points: <?php echo $_SESSION['Points']; ?></h2>
+	<h2>You Scored <?php echo $_SESSION['Points']; ?> Points</h2>
 
-	<p><a href="signup.php"> Play Again? </a></p>
+
+	<p><a class="signup" href="signup.php"> Play Again? </a></p>
 </body>
 </html>
