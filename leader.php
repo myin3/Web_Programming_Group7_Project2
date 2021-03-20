@@ -13,17 +13,17 @@
 		$leaderboard = array();
 		$count = 0;
 		$temp = array();
-		$leader = file_get_contents('leader.txt');
-		$leader_array = explode("\n", $leader);
-		rsort($leader_array)
+		$_SESSION['leader'] = file_get_contents('leader.txt');
+		$_SESSION['leader_array'] = explode("\n", $_SESSION['leader']);
+		rsort($_SESSION['leader_array']);
 
 	?>
 
 	<div>
 
-		<h2><?php echo "1: ".$leader_array[0]; ?></h2>
-		<h2><?php echo "2: ".$leader_array[1]; ?></h2>
-		<h2><?php echo "3: ".$leader_array[2]; ?></h2>
+		<h2><?php echo "1: ".$_SESSION['leader_array'][0]; ?></h2>
+		<h2><?php echo "2: ".$_SESSION['leader_array'][1]; ?></h2>
+		<h2><?php echo "3: ".$_SESSION['leader_array'][2]; ?></h2>
 
 	</div>
 
